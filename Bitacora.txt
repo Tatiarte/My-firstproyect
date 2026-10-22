@@ -1,0 +1,32 @@
+Registro de resultados
+
+1. Prueba de solicitud HTTP con Live Server
+URL http://127.0.0.1:5500/Rueda-Libre/index.html significa lo siguiente:
+    - Protocolo HTTP: (el que obtenemos por medio del live server)
+    - Host: 127.0.0.1 - en este caso no tenemos dominio sino un host, debido a que live server convierte mi local en host
+    - Puerto: 5500 - la entrada por la que el Live Server me atiende. Es decir es el puerto en el que Live Server escucha las solicitudes del navegador.
+    - Ruta: /Rueda-Libre/index.html: al igual que la teoria del moodle, la ruta nos indica el recurso del servidor, es decir que usa mi file del local
+    - Método HTTP: GET - porque de momento solo estamos obteniendo información no enviando datos para procesarlos
+    - Código de estado observado inicialmente: 304 Not Modified - Esto ocurrio porque ya había abierto la página antes y el navegador tenia una copia de 
+    recursos en caché.
+    - Código de estado después de desactivar el caché: 200 ok - en Network aparecia una casilla para señalar que deshabilitara el caché y así al recargar
+    pidio el contenido solicitado como normalmente
+
+2. Prueba de solicitud a una ruta inexistente
+Se uso la siguiente URL: http://127.0.0.1:5500/Rueda-Libre/promociones.html - en este caso se agrego /promociones.html
+Método HTTP: GET
+Código de estado: 404 Not Found - El navegador mostro un mensaje de error. Porque esta solicitando el archivo promociones.html pero no existe en la
+ubicación que le estoy indicando del proyecto. Aquí se puede entender mejor la función del Live Server porque al no encontrar el recurso respondió con
+HTTP 404 Not Found.
+
+3. Explicar con mis propias palabras qué rol cumplirá es HTML, CSS y JavaScript
+HTML es la parte estructural de la página, contiene títulos, listas, enlaces, imagenes. Haciendo una analogía sería las columnas, el cemento y los morteros de un edificio.
+CSS es la parte que se encarga de darle diseño a la página web, en este caso interviene en los bordes, colores, tipos de letra, etc. Sigueindo la analogía del edificio sería la pintura, baldosas y diseño del eedificio.
+JavaScript vendría siendo la parte funcional al incluirle lógica que permite interactuar con los distintos elementos de la  página, seria la electricidad y la luz del edificio.
+
+Ejemplo concreto: formulario de reserva en Rueda Libre
+HTML: puede proporcionar la estructura del formulario. Por ejemplo, incluye textos que indican la información que el usuario debe registrar, se usan campos como input
+para el usuario escriba la información y un button para enviar la reserva.
+CSS: se encarga de la apriencia visual del formulario: los bordes, colores, contrastes con el resto de la página, tipos de letra, animaciones al presionar el botón.
+JavaScript: le da funcionalidad a partir de la lógica lo que permite que haya interactividad. En el caso de Rueda Libre puede comprobar si los campos obligatorios del formulario estan completos 
+y gestionar el envió de la información (que posterioemnte requiere de un servidor que procede los datos)
