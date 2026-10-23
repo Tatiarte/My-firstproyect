@@ -2,8 +2,8 @@ Registro de resultados
 
 1. Prueba de solicitud HTTP con Live Server
 URL http://127.0.0.1:5500/Rueda-Libre/index.html significa lo siguiente:
-    - Protocolo HTTP: (el que obtenemos por medio del live server)
-    - Host: 127.0.0.1 - en este caso no tenemos dominio sino un host, debido a que live server convierte mi local en host
+    - Protocolo HTTP: Es el protocolo que permite la comunicación entre el navegador y el servidor web.
+    - Host: 127.0.0.1 - Es una dirección IP que apunta al propio computador, donde se está ejecutando Live Server.
     - Puerto: 5500 - la entrada por la que el Live Server me atiende. Es decir es el puerto en el que Live Server escucha las solicitudes del navegador.
     - Ruta: /Rueda-Libre/index.html: al igual que la teoria del moodle, la ruta nos indica el recurso del servidor, es decir que usa mi file del local
     - Método HTTP: GET - porque de momento solo estamos obteniendo información no enviando datos para procesarlos
