@@ -2,31 +2,135 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Reserva tu bicicleta en Rueda Libre, Medellín: datos de contacto y horario de atención">
+    <meta name="description" content="Reserva tu bicicleta en Rueda Libre, Medellín: formulario de reserva, datos de contacto y horario de atención">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas | Rueda Libre</title>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="tarifas.html">Tarifas y rutas</a></li>
-      <li><a href="reservas.html">Reservas</a></li>
-    </ul>
-  </nav>
+  <header>
+    <p><strong>Rueda Libre</strong></p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="tarifas.html">Tarifas y rutas</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Reserva tu bicicleta</h1>
-  <p>Muy pronto podrás reservar desde un formulario. Mientras tanto, escríbenos y confirmamos tu reserva.</p>
-  <p>Correo de contacto: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
+  <main>
+    <h1>Reserva tu bicicleta</h1>
+    <p>Completa el formulario y confirmaremos tu reserva. También puedes escribirnos a
+      <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>.</p>
 
-  <h2>Horario de atención</h2>
-  <dl>
-    <dt>Lunes a viernes</dt>
-    <dd>7:00 a. m. a 7:00 p. m.</dd>
-    <dt>Sábados, domingos y festivos</dt>
-    <dd>6:00 a. m. a 2:00 p. m.</dd>
-  </dl>
+    <section>
+      <h2>Formulario de reserva</h2>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Tus datos</legend>
+
+          <p>
+            <label for="nombre">Nombre completo</label><br>
+            <input type="text" id="nombre" name="nombre" autocomplete="name">
+          </p>
+
+          <p>
+            <label for="documento">Número de documento</label><br>
+            <input type="text" id="documento" name="documento" inputmode="numeric">
+          </p>
+
+          <p>
+            <label for="correo">Correo electrónico</label><br>
+            <input type="email" id="correo" name="correo" autocomplete="email">
+          </p>
+
+          <p>
+            <label for="celular">Celular</label><br>
+            <input type="tel" id="celular" name="celular" autocomplete="tel">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tu alquiler</legend>
+
+          <p>
+            <label for="fecha">Fecha del alquiler</label><br>
+            <input type="date" id="fecha" name="fecha">
+          </p>
+
+          <p>
+            <label for="tipo-bicicleta">Tipo de bicicleta</label><br>
+            <select id="tipo-bicicleta" name="tipo_bicicleta">
+              <option value="">Selecciona una opción</option>
+              <option value="urbana">Urbana</option>
+              <option value="montana">Montaña</option>
+              <option value="electrica">Eléctrica</option>
+            </select>
+          </p>
+
+          <fieldset>
+            <legend>Plan</legend>
+            <p>
+              <input type="radio" id="plan-1h" name="plan" value="1-hora">
+              <label for="plan-1h">1 hora</label>
+            </p>
+            <p>
+              <input type="radio" id="plan-medio-dia" name="plan" value="medio-dia">
+              <label for="plan-medio-dia">Medio día (4 h)</label>
+            </p>
+            <p>
+              <input type="radio" id="plan-dia" name="plan" value="dia-completo">
+              <label for="plan-dia">Día completo</label>
+            </p>
+          </fieldset>
+
+          <p>
+            <label for="cantidad">Cantidad de bicicletas</label><br>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1">
+          </p>
+
+          <p>
+            <label for="recorrido">Recorrido guiado</label><br>
+            <select id="recorrido" name="recorrido">
+              <option value="ninguno">Ninguno</option>
+              <option value="rio-y-parques">Río y Parques</option>
+              <option value="sabores-de-barrio">Sabores de Barrio</option>
+              <option value="reto-las-palmas">Reto Las Palmas</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Confirmación</legend>
+
+          <p>
+            <label for="comentarios">Comentarios</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="politicas" name="politicas" value="aceptadas">
+            <label for="politicas">Acepto las políticas de alquiler</label>
+          </p>
+        </fieldset>
+
+        <button type="submit">Enviar reserva</button>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Horario de atención</h2>
+      <dl>
+        <dt>Lunes a viernes</dt>
+        <dd>7:00 a. m. a 7:00 p. m.</dd>
+        <dt>Sábados, domingos y festivos</dt>
+        <dd>6:00 a. m. a 2:00 p. m.</dd>
+      </dl>
+    </aside>
+  </main>
 
   <footer>
     <p>Rueda Libre · <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a> · © 2026</p>
