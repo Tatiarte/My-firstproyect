@@ -11,6 +11,7 @@
   <header>
     <p><strong>Rueda Libre</strong></p>
     <nav aria-label="Navegación principal">
+      <!--aria-label sirve para darle un nombre descriptivo a un elemento HTML para las tecnologías de asistencia así no se confunde con otro nav por ejemplo-->
       <ul>
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="tarifas.html">Tarifas y rutas</a></li>
@@ -28,28 +29,29 @@
       <h2>Formulario de reserva</h2>
 
       <form action="#" method="post">
+        <!--Dejemos post de momento, luego lo conectamos a una base de datos-->
 
         <fieldset>
           <legend>Tus datos</legend>
 
           <p>
             <label for="nombre">Nombre completo</label><br>
-            <input type="text" id="nombre" name="nombre" autocomplete="name">
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
           </p>
 
           <p>
             <label for="documento">Número de documento</label><br>
-            <input type="text" id="documento" name="documento" inputmode="numeric">
+            <input type="text" id="documento" name="documento" inputmode="numeric" required>
           </p>
 
           <p>
             <label for="correo">Correo electrónico</label><br>
-            <input type="email" id="correo" name="correo" autocomplete="email">
+            <input type="email" id="correo" name="correo" autocomplete="email" placeholder="ejemplo@gmail.com" required>
           </p>
 
           <p>
             <label for="celular">Celular</label><br>
-            <input type="tel" id="celular" name="celular" autocomplete="tel">
+            <input type="tel" id="celular" name="celular" autocomplete="tel" required>
           </p>
         </fieldset>
 
@@ -58,7 +60,7 @@
 
           <p>
             <label for="fecha">Fecha del alquiler</label><br>
-            <input type="date" id="fecha" name="fecha">
+            <input type="date" id="fecha" name="fecha" required>
           </p>
 
           <p>
@@ -70,7 +72,7 @@
               <option value="electrica">Eléctrica</option>
             </select>
           </p>
-
+        </fieldset>
           <fieldset>
             <legend>Plan</legend>
             <p>
@@ -85,7 +87,6 @@
               <input type="radio" id="plan-dia" name="plan" value="dia-completo">
               <label for="plan-dia">Día completo</label>
             </p>
-          </fieldset>
 
           <p>
             <label for="cantidad">Cantidad de bicicletas</label><br>
