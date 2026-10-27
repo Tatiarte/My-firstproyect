@@ -36,12 +36,12 @@
 
           <p>
             <label for="nombre">Nombre completo</label><br>
-            <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Ana Pérez" required>
+            <input type="text" id="nombre" name="nombre" minlength="3" autocomplete="name" placeholder="Ana Pérez" required>
           </p>
 
           <p>
             <label for="documento">Número de documento</label><br>
-            <input type="text" id="documento" name="documento" inputmode="numeric" placeholder="Ingrese número" required>
+            <input type="text" id="documento" name="documento" inputmode="numeric" minlength="6" maxlength="10" placeholder="Ingrese número" required>
           </p>
 
           <p>
@@ -51,7 +51,7 @@
 
           <p>
             <label for="celular">Celular</label><br>
-            <input type="tel" id="celular" name="celular" autocomplete="tel" placeholder="Ingrese celular" required>
+            <input type="tel" id="celular" name="celular" minlength="10" maxlength="10" pattern="3[0-9]{9}" autocomplete="tel" placeholder="Ingrese celular" required>
           </p>
         </fieldset>
 
@@ -60,12 +60,12 @@
 
           <p>
             <label for="fecha">Fecha del alquiler</label><br>
-            <input type="date" id="fecha" name="fecha" required>
+            <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
           </p>
 
           <p>
             <label for="tipo-bicicleta">Tipo de bicicleta</label><br>
-            <select id="tipo-bicicleta" name="tipo_bicicleta">
+            <select id="tipo-bicicleta" name="tipo_bicicleta" requiered>
               <option value="">Selecciona una opción</option>
               <option value="urbana">Urbana</option>
               <option value="montana">Montaña</option>
@@ -76,21 +76,21 @@
           <fieldset>
             <legend>Plan</legend>
             <p>
-              <input type="radio" id="plan-1h" name="plan" value="1-hora">
+              <input type="radio" id="plan-1h" name="plan" value="1-hora" required>
               <label for="plan-1h">1 hora</label>
             </p>
             <p>
-              <input type="radio" id="plan-medio-dia" name="plan" value="medio-dia">
+              <input type="radio" id="plan-medio-dia" name="plan" value="medio-dia" required>
               <label for="plan-medio-dia">Medio día (4 h)</label>
             </p>
             <p>
-              <input type="radio" id="plan-dia" name="plan" value="dia-completo">
+              <input type="radio" id="plan-dia" name="plan" value="dia-completo" required>
               <label for="plan-dia">Día completo</label>
             </p>
 
           <p>
             <label for="cantidad">Cantidad de bicicletas</label><br>
-            <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1">
+            <input type="number" id="cantidad" name="cantidad" min="1" max="6" value="1">
           </p>
 
           <p>
@@ -109,13 +109,13 @@
 
           <p>
             <label for="comentarios">Comentarios</label><br>
-            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+            <textarea id="comentarios" name="comentarios" maxlength="300" rows="4" cols="40"></textarea>
           </p>
 
           <p>
-            <input type="checkbox" id="politicas" name="politicas" value="aceptadas">
+            <input type="checkbox" id="politicas" name="politicas" value="aceptadas" required>
             <label for="politicas">Acepto las políticas de alquiler</label>
-            <input type="checkbox" id="Tratamiento de datos personales" name="Tratamiento de datos personales" value="aceptadas">
+            <input type="checkbox" id="Tratamiento de datos personales" name="Tratamiento de datos personales" value="aceptadas" required>
             <label for="Tratamiento de datos personales">Acepta las politícas de tratamiento de datos personales</label>
           </p>
         </fieldset>
