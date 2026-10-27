@@ -8,77 +8,103 @@
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
-      <li><a href="paginas/reservas.html">Reservas</a></li>
-    </ul>
-  </nav>
+  <!--Encabezado: nombre del negocio + navegación principal-->
+  <header>
+    <p><strong>Rueda Libre</strong></p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="paginas/tarifas.html">Tarifas y rutas</a></li>
+        <li><a href="paginas/reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Rueda Libre | Alquiler de bicicletas en Medellín</h1>
-  <img src="img/Portada.jpeg" alt="Portada de Rueda Libre, alquiler de bicicletas en Medellín" width="600">
-  <p>En Rueda Libre queremos que descubras Medellín de una manera diferente:
-    sobre dos ruedas, disfrutando de sus paisajes, sus calles y sus espacios urbanos.
-    <br>Ofrecemos alquiler de bicicletas, recorridos guiados y talleres básicos para
-    que vivas una experiencia cómoda, activa y cercana a la ciudad. <a href="#encuentranos">Encuéntranos</a>
-  </p>
+  <!--Contenido principal: solo hay un <main> por página-->
+  <main>
+    <h1>Rueda Libre | Alquiler de bicicletas en Medellín</h1>
+    <img src="img/Portada.jpeg" alt="Portada de Rueda Libre, alquiler de bicicletas en Medellín" width="600">
+    <p>En Rueda Libre queremos que descubras Medellín de una manera diferente:
+      sobre dos ruedas, disfrutando de sus paisajes, sus calles y sus espacios urbanos.
+      <br>Ofrecemos alquiler de bicicletas, recorridos guiados y talleres básicos para
+      que vivas una experiencia cómoda, activa y cercana a la ciudad. <a href="#encuentranos">Encuéntranos</a>
+    </p>
 
-  <h2>¿Quiénes somos?</h2>
-  <p>
-    Somos un proyecto que promueve el uso de la bicicleta
-    como una forma de movilidad sostenible y una manera
-    diferente de conocer Medellín.
-  </p>
+    <section>
+      <h2>¿Quiénes somos?</h2>
+      <p>
+        Somos un proyecto que promueve el uso de la bicicleta
+        como una forma de movilidad sostenible y una manera
+        diferente de conocer Medellín.
+      </p>
+    </section>
 
-  <h2>Nuestros servicios</h2>
-  <img src="img/Bicicleta.jpg" alt="Bicicleta disponible para alquilar en Rueda Libre" width="400">
+    <section>
+      <h2>Nuestros servicios</h2>
+      <img src="img/Bicicleta.jpg" alt="Bicicleta disponible para alquilar en Rueda Libre" width="400">
 
-  <h3>Alquiler de bicicletas</h3>
-  <p>
-    Alquila una bicicleta para recorrer Medellín a tu propio ritmo.
-    El servicio incluye <strong>casco y candado</strong> para tu recorrido.
-    <em>Descubre la ciudad de una manera diferente.</em>
-  </p>
+      <!--Cada servicio es un <article>: tiene sentido por sí solo-->
+      <article>
+        <h3>Alquiler de bicicletas</h3>
+        <p>
+          Alquila una bicicleta para recorrer Medellín a tu propio ritmo.
+          El servicio incluye <strong>casco y candado</strong> para tu recorrido.
+          <em>Descubre la ciudad de una manera diferente.</em>
+        </p>
+      </article>
 
-  <h3>Recorridos guiados</h3>
-  <p>
-    Conoce los lugares más interesantes de Medellín acompañado por un guía.
-    <strong>Recibirás orientación durante el recorrido.</strong>
-    <em>Una experiencia para disfrutar y aprender sobre la ciudad.</em>
-  </p>
+      <article>
+        <h3>Recorridos guiados</h3>
+        <p>
+          Conoce los lugares más interesantes de Medellín acompañado por un guía.
+          <strong>Recibirás orientación durante el recorrido.</strong>
+          <em>Una experiencia para disfrutar y aprender sobre la ciudad.</em>
+        </p>
+      </article>
 
-  <h3>Taller básico</h3>
-  <p>
-    Aprende sobre el cuidado y el mantenimiento básico de tu bicicleta.
-    <strong>Conoce las herramientas y revisiones esenciales.</strong>
-    <em>Adquiere conocimientos útiles para tus recorridos.</em>
-  </p>
+      <article>
+        <h3>Taller básico</h3>
+        <p>
+          Aprende sobre el cuidado y el mantenimiento básico de tu bicicleta.
+          <strong>Conoce las herramientas y revisiones esenciales.</strong>
+          <em>Adquiere conocimientos útiles para tus recorridos.</em>
+        </p>
+      </article>
+    </section>
 
-  <h2>¿Cómo alquilar?</h2>
-  <ol>
-    <li>Elige la bicicleta que deseas alquilar.</li>
-    <li>Consulta la disponibilidad y las tarifas.</li>
-    <li>Reserva tu bicicleta por WhatsApp.</li>
-    <li>Recoge la bicicleta en el punto de encuentro, disfruta tu recorrido por Medellín y devuélvela en el horario acordado.</li>
-  </ol>
-  <p><a href="paginas/reservas.html">Reservar ahora</a></p>
+    <section>
+      <h2>¿Cómo alquilar?</h2>
+      <ol>
+        <li>Elige la bicicleta que deseas alquilar.</li>
+        <li>Consulta la disponibilidad y las tarifas.</li>
+        <li>Reserva tu bicicleta por WhatsApp.</li>
+        <li>Recoge la bicicleta en el punto de encuentro, disfruta tu recorrido por Medellín y devuélvela en el horario acordado.</li>
+      </ol>
+      <p><a href="paginas/reservas.html">Reservar ahora</a></p>
 
-  <h3>Beneficios</h3>
-  <ul>
-    <li>Descuento para socios con membresía.</li>
-    <li>Alquila más tiempo y paga menos.</li>
-    <li>Recibe asesoría sobre rutas y lugares de interés en Medellín.</li>
-  </ul>
+      <!--Beneficios es un h3, así que va anidado dentro de ¿Cómo alquilar? para no alterar la jerarquía-->
+      <section>
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Descuento para socios con membresía.</li>
+          <li>Alquila más tiempo y paga menos.</li>
+          <li>Recibe asesoría sobre rutas y lugares de interés en Medellín.</li>
+        </ul>
+      </section>
+    </section>
 
-  <h2 id="encuentranos">Encuéntranos</h2>
-  <img src="img/Ruta_Ciclovia.png" alt="Ruta en bicicleta por las calles de Medellín" width="200">
+    <section id="encuentranos">
+      <h2>Encuéntranos</h2>
+      <img src="img/Ruta_Ciclovia.png" alt="Ruta en bicicleta por las calles de Medellín" width="200">
 
-  <p>Explora Medellín sobre dos ruedas.
-    <a href="https://www.google.com/maps/search/?api=1&query=Medellin" target="_blank" rel="noopener noreferrer">Consulta el mapa de Medellín</a>
-  </p>
-  <p>¿Tienes preguntas? <a href="mailto:hola@ruedalibre.example">Escríbenos por correo</a></p>
+      <p>Explora Medellín sobre dos ruedas.
+        <a href="https://www.google.com/maps/search/?api=1&query=Medellin" target="_blank" rel="noopener noreferrer">Consulta el mapa de Medellín</a>
+      </p>
+      <p>¿Tienes preguntas? <a href="mailto:hola@ruedalibre.example">Escríbenos por correo</a></p>
+    </section>
+  </main>
 
+  <!--Pie de página-->
   <footer>
     <p>Rueda Libre · <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a> · Todos los derechos reservados © 2026</p>
   </footer>

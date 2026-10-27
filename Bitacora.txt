@@ -30,3 +30,53 @@ para el usuario escriba la información y un button para enviar la reserva.
 CSS: se encarga de la apriencia visual del formulario: los bordes, colores, contrastes con el resto de la página, tipos de letra, animaciones al presionar el botón.
 JavaScript: le da funcionalidad a partir de la lógica lo que permite que haya interactividad. En el caso de Rueda Libre puede comprobar si los campos obligatorios del formulario estan completos 
 y gestionar el envió de la información (que posterioemnte requiere de un servidor que procede los datos)
+
+Esquema de regiones utilizado antes de intervenir el código
+**index.html**
+body
+├── header
+│   ├── p > strong "Rueda Libre"
+│   └── nav (principal)
+│       └── ul: Inicio · Tarifas y rutas · Reservas
+├── main
+│   ├── h1 + img portada + p introductorio (enlace a #encuentranos)
+│   ├── section ¿Quiénes somos?            (h2)
+│   ├── section Nuestros servicios         (h2)
+│   │   ├── article Alquiler de bicicletas (h3)
+│   │   ├── article Recorridos guiados     (h3)
+│   │   └── article Taller básico          (h3)
+│   ├── section ¿Cómo alquilar?            (h2)
+│   │   └── section Beneficios             (h3)
+│   └── section#encuentranos Encuéntranos  (h2)
+└── footer
+
+Justificación: 
+
+**tarifas.html**
+body
+├── header (logo + nombre + nav principal)
+├── main
+│   ├── h1 + p introductorio
+│   ├── section Tarifas de alquiler de bicicletas   (h2 + table)
+│   ├── section#recorridos-guiados Tarifas de recorridos guiados (h2 + table)
+│   └── section Información importante              (h2)
+│       └── aside ¿Qué debes llevar?                (h3 + ul)  ← complementario
+└── footer
+
+**reservas.html**
+body
+├── header (nombre + nav principal)
+├── main
+│   ├── h1 + p introductorio
+│   ├── section Formulario de reserva (h2 + form con fieldsets)
+│   └── aside Horario de atención     (h2 + dl)  ← complementario
+└── footer
+
+
+Antes de tocar el código, dibuja en la bitácora (con texto o en papel) el esquema de regiones de cada página: 
+encabezado, navegación, contenido principal, secciones, artículos, contenido complementario y pie.
+
+Paleta de colores WCAG minismos para texto
+4,5:1 para texto normal.
+3:1 para texto grande.
+3:1 para componentes y elementos gráficos relevantes de la interfaz, según los criterios aplicables
