@@ -1,0 +1,58 @@
+/* :root es el selector donde declaramos variables globales*/
+/* var() es la función que nos permite llamar a las variables declaradas en :root por ejemplo var(--color-cream) */
+:root {
+    /* Colores de marca */
+    --color-cream: #FAF6EF;
+    --color-night-blue: #14213D;
+    --color-asphalt-gray: #5B6470;
+    --color-route-green: #1E7A4F;
+    --color-pedal-orange: #F39A2B;
+    --color-white: #FFFFFF;
+
+    /* Tipografías */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    /* Espaciados */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+}
+
+body {
+    /* font-family: establece Open Sans como fuente principal para el cuerpo del documento */
+    font-family: var(--font-body);
+    background-color: var(--color-cream);
+    /* color de texto*/
+    color: var(--color-night-blue);
+    /* El margin elimina el margen exterior y el padding del body para que ocupe todo el espacio disponible en la ventana del navegador */
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografia de encavezados */
+/* Aqui aplicamos la herenica porque en el body ya habiamos establecido la fuente Open Sans, y ahora para los encabezados queremos que */
+/* sea Montserrat, entonces se aplica la herencia de la fuente del body a los encabezados y luego se sobreescribe con la fuente Montserrat */
+/* es decir, le establecimos una regla especifica sobre la que ya tenia el body */
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: establece Montserrat como fuente principal para los encabezados */
+    font-family: var(--font-heading);
+    /*color de texto*/
+    color: var(--color-night-blue);
+}
+
+/*Enlaces*/
+a {
+    color: var(--color-route-green);
+}
+
+/* Botones */
+/* Aqui estoy usando las variables que use anteriormente en el :root*/
+button {
+    background-color: var(--color-route-green);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    border: none;
+    padding: var(--spacing-medium);
+    cursor: pointer;
+}

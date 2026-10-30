@@ -180,3 +180,21 @@ Botones principales: Verde Ruta con texto blanco
 Botones secundarios: Naranja Pedal con texto Azul Noche
 Enlaces: Verde Ruta sobre Crema
 Encabezado oscuro: Azul Noche con texto blanco
+
+
+Publicación del sitio Rueda Libre v0.2
+Plataforma: GitHub Pages.
+Rama: main.
+Carpeta: root.
+URL pública: (tu enlace).
+Estado: publicado y verificado.
+
+
+Pendiente sacar de los apuntes
+Registrar mínimo cinco hallazgos reales.
+Explicar cada corrección realizada.
+Incluir la tabla de contraste.
+Incluir el mapa de uso de color.
+
+MINIRETO 9 - CSS
+Tipografía: Bold Montserrat y Open Sans
