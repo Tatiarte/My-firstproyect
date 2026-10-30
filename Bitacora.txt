@@ -196,5 +196,21 @@ Explicar cada corrección realizada.
 Incluir la tabla de contraste.
 Incluir el mapa de uso de color.
 
-MINIRETO 9 - CSS
+MINIRETO 9 - CSS PENDIENTE
 Tipografía: Bold Montserrat y Open Sans
+Comprobación de herencia y estilos
+
+Queda pendiente verificar en las herramientas de desarrollo del navegador (DevTools), en las pestañas Styles y Computed, las propiedades heredadas por un párrafo desde el elemento body.
+
+Se debe comprobar:
+
+Una propiedad que sí se hereda, como font-family o color.
+
+Una propiedad que no se hereda, como background-color.
+
+También queda pendiente verificar que las tres páginas (Inicio, Tarifas y Reservas) carguen correctamente la hoja styles.css y las fuentes de Google Fonts, sin errores en Network.
+
+Finalmente, realizar commit y push al repositorio.
+
+MINIRETO 10 / 
+Especifidad: el selector ID tiene mayor especificidad que uno con clase
