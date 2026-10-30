@@ -56,3 +56,12 @@ button {
     padding: var(--spacing-medium);
     cursor: pointer;
 }
+
+#menu a {
+    color: var(--color-asphalt-gray);
+}
+
+.activo {
+    color: var(--color-route-green);
+    font-weight: 600;
+}

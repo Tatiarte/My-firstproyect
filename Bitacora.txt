@@ -205,12 +205,22 @@ Queda pendiente verificar en las herramientas de desarrollo del navegador (DevTo
 Se debe comprobar:
 
 Una propiedad que sí se hereda, como font-family o color.
-
 Una propiedad que no se hereda, como background-color.
-
-También queda pendiente verificar que las tres páginas (Inicio, Tarifas y Reservas) carguen correctamente la hoja styles.css y las fuentes de Google Fonts, sin errores en Network.
-
+También queda pendiente verificar que las tres páginas (Inicio, Tarifas y Reservas)
+carguen correctamente la hoja styles.css y las fuentes de Google Fonts, sin errores en Network.
 Finalmente, realizar commit y push al repositorio.
 
 MINIRETO 10 / 
+
 Especifidad: el selector ID tiene mayor especificidad que uno con clase
+Problema encontrado: La clase .activo no logra cambiar el color del enlace porque el selector #menu a tiene mayor especificidad.
+
+Cálculo de especificidad:
+#menu a: 1 ID, 0 clases y 1 elemento (1-0-1).
+.activo: 0 ID, 1 clase y 0 elementos (0-1-0).
+
+Causa:
+
+El selector #menu a tiene mayor especificidad, por lo que el navegador aplica el color gris y deja tachada la declaración de color verde de
+.activo en DevTools.
+La clase sí funciona: su propiedad font-weight: 600 se aplica, pero el color pierde frente al selector más específico.
