@@ -121,4 +121,62 @@ Recorre el sitio publicado: verifica las tres páginas, las imágenes y los enla
 Agrega el enlace publicado en la descripción del repositorio y en la bitácora.
 
 La bitácora registra al menos cinco hallazgos de accesibilidad con su corrección.
-Bitácora con: esquema de regiones, justificación de controles, tabla de pruebas de validación, auditoría de accesibilidad y mapa de uso de color.
+Bitácora con: esquema de regiones, justificación de controles, tabla de pruebas de validación, auditoría de accesibilidad y 
+mapa de uso de color.
+
+Minireto 8
+Comprobar contrastes
+En WebAIM Contrast Checker se realizo el contraste entre Foreground color (color del texto) y el Background color (Color de fondo) con los siguientes valores:
+Texto normal: mínimo 4.5:1.
+Texto grande: mínimo 3:1.
+No apta: menos de 3:1.
+
+Foreground: #FFFFFF
+Background #1E7A4F
+Contraste de 5.31:1
+Apto
+
+Foreground: #FFFFFF
+Background: #F39A2B
+Contraste: 2.21:1
+No apto
+
+Foreground: #14213D
+Background: #F39A2B
+Contraste: 7.2:1
+Apto
+
+Foreground: #14213D
+Background: #FAF6EF
+Contraste: 14.83:1
+Apto
+
+Foreground: #5B6470
+Background: #FAF6EF
+Contraste: 5.57:1
+Apto
+
+Foreground: #1E7A4F
+Background: #FAF6EF
+Contraste: 4.93:1
+Apto
+
+Foreground: #F39A2B
+Background: #FAF6EF
+Contraste: 2.06:1
+No apto
+
+Foreground: #FFFFFF
+Background: #14213D
+Contraste: 16.04:1
+Apto
+
+
+Fondo general:	Crema #FAF6EF
+Títulos: Azul Noche #14213D
+Texto principal: Azul Noche #14213D
+Texto secundario: Gris Asfalto #5B6470
+Botones principales: Verde Ruta con texto blanco
+Botones secundarios: Naranja Pedal con texto Azul Noche
+Enlaces: Verde Ruta sobre Crema
+Encabezado oscuro: Azul Noche con texto blanco
